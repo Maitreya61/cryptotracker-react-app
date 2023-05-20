@@ -31,7 +31,7 @@ function App() {
   
 
   const fcoins = coins.filter((item)=>{
-    return(search.toLowerCase() ==='' ? item :item.name.toLowerCase().includes(search))
+    return(search.toLowerCase() ==='' ? item :item.name.toLowerCase().includes(search.toLocaleLowerCase()))
   })
 
 
